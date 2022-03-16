@@ -1,74 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100px"
-        android:background="#9DFF00"
-        android:text="Anak 1"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100px"
-        android:background="#00FFB7"
-        android:text="Anak 2"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100px"
-        android:background="#FF0084"
-        android:text="Anak 3"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100px"
-        android:background="#00FF04"
-        android:text="Anak 4"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100px"
-        android:background="#FF8400"
-        android:text="Anak 5"
-        android:textSize="30sp" />
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="250dp"
+        android:background="@drawable/gradiasi"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="100px"
-            android:background="#D000FF"
-            android:text="Anak 6"
-            android:textSize="30sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center">
 
-        <TextView
+        <LinearLayout
+            android:id="@+id/line1"
             android:layout_width="wrap_content"
-            android:layout_height="100px"
-            android:background="#0022FF"
-            android:text="Anak 7"
-            android:textSize="30sp" />
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <TextView
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/plus" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="New"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/download" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Download"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Profile"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/out" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Exit"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
             android:layout_width="wrap_content"
-            android:layout_height="100px"
-            android:background="#FF0000"
-            android:text="Anak 8"
-            android:textSize="30sp" />
-    </LinearLayout>
-</LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/line1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/editing" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Upload"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/history" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="History"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/backgron1">
+
+                <ImageView
+                    android:id="@+id/iview1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/settings" />
+
+                <TextView
+                    android:id="@+id/textiview1"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/iview1"
+                    android:layout_alignTop="@id/iview1"
+                    android:layout_alignRight="@+id/iview1"
+                    android:layout_alignBottom="@id/iview1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Setting"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
