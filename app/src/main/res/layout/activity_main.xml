@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
+
     <View
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@drawable/gradiasi"/>
+        android:background="@drawable/gradiasi" />
 
     <RelativeLayout
         android:layout_width="match_parent"
